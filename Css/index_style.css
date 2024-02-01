@@ -336,10 +336,10 @@ background-clip: text;
     background-image: url(../images/rwandan_flag.jpg);
 }
 .project2{
-    background-image: url(../../age-calculator-app-main/design/desktop-completed.jpg);
+    background-image: url(../images/desktop-completed.jpg);
 }
 .project3{
-    background-image: url(../../../Pictures/etch-a-sketch.png);
+    background-image: url(../images/etch-a-sketch.png);
 }
 /* the project div */
 .project{
