@@ -1,0 +1,697 @@
+body{
+    margin: 0px 120px;
+    min-height: 100vh;
+    font-family: sans-serif;
+    background-color: #030712;
+    box-sizing: border-box;
+}
+*{
+    font-family: sans-serif;
+    /* padding: 0;
+    margin: 0; */
+}
+.nav_img{
+    width: 70px;
+    height: 92px;
+    border-radius: 68px;
+}
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    width: auto;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    /* padding: 20px; */
+    background-color: rgb(3, 7, 18, 0.5);
+    z-index: 1000;
+    /* position: fixed; */
+    padding: 0 120px 0 120px;
+}   
+
+
+/*this is the hambuger button links  */
+.side_bar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 50%;
+    z-index: 999;
+    background-color: rgba(3, 7, 18, 0.681);
+    backdrop-filter: blur(100px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.side_bar ul .svg_hover{
+    position: absolute;
+    top: 28px;
+    right: 0;
+}
+.side_bar ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 54px;
+    list-style: none;
+}
+.side_bar li{
+    width: 100%;
+}
+/* .side_bar a{
+    width: 100%;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    color: #51C4B6;
+    text-decoration: none;
+    padding: 0 30px;
+}
+.side_bar a:hover{
+    color: #05FCDE;
+    font-size: 32px;
+} */
+.side_bar a{
+    padding: 0 35px;
+}
+.svg_hover{
+    fill: #51C4B6;
+}
+a .svg_hover:hover{
+    fill: #05FCDE;
+}
+.menu_btn{
+    display: none;
+}
+
+
+/* responsive for tablets */
+
+
+
+.nav_links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 54px;
+}
+@media screen and (max-width: 800px) {
+    .hideOnMobile{
+        display: none;
+    }
+    .menu_btn{
+        display: block;
+    }
+}
+@media screen and (max-width: 400px){
+    .side_bar{
+        width: 100%;
+        align-items: center;
+        padding-top: 50px;
+        text-align: center;
+    }
+}
+.nav_btn{
+    width: 120px;
+    height: 60px;
+    font-size: 32px;
+    border-radius: 9px;
+    font-weight: 500;
+    display: none;
+}
+.navbar.nav_btn:hover{
+    display: blockS;
+}
+.navbar2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 49px;
+}
+/* for all btns */
+.btn{
+    background-color: #2C0F3A;
+    color: #05FCDE;
+    border: none;
+}
+.btn:hover{
+    color: #01E2F0;
+}
+.navbar a{
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    color: #51C4B6;
+    text-decoration: none;
+}
+.navbar a:hover{
+    color: #05FCDE;
+    font-size: 32px;
+}
+/* this is the socials div */
+.socials{
+display: inline-flex;
+flex-direction: column;
+align-items: center;
+gap: 27px;
+position: fixed;
+top: 102px;
+left: 31px;
+}
+.socials hr{
+    width: 3px;
+    height: 428px;
+    border-color: #05FCDE;
+    background-color: #05FCDE;
+}
+.socials_1{
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (max-width: 1000px) {
+    .navbar{
+        padding: 0 50px 0 50px;
+    }
+    .socials{
+        left: 50px;
+    }
+
+}
+
+/* this is the home section */
+.home_page{
+    display: flex;
+    gap: 74px;
+    margin-top: 210px;
+    margin-left: 35px;
+    align-items: center;
+    
+}
+.home_img{
+    width: 400px;
+    height: 474px;
+}
+.home_img img{
+/* width: 400px;
+height: 474px; */
+flex-shrink: 1;
+width: 100%;
+height: 100%;
+/* max-width: 100%;
+max-height: auto; */
+}
+.home_text{
+    color: white;
+}
+
+.Hello_message{
+color: #05FCDE;
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+/* margin-bottom: 15px; */
+}
+.home_name{
+color: #94A3B8;
+/* font-family: Inter; */
+font-size: 64px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+/* padding-bottom: 20px; */
+}
+.home_descript{
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+background-image: linear-gradient(180deg, #EDD8D8 69%, rgba(237, 216, 216, 0.00) 100%);
+/* linear-gradient(180deg, rgba(225, 214, 214, 0.50) 0%, rgba(142, 122, 122, 0.47) 99.99%, rgba(225, 214, 214, 0.00) 100%);  */
+color: transparent;
+-webkit-text-fill-color: transparent; 
+background-clip: text;
+}
+.resume{
+    margin-left: 55px;
+    margin-top: 94px;
+}
+.resume button{
+    background-color:#2C0F3A;
+    border: none;
+    padding: 16px 46px;
+    text-align: center;
+    border-radius: 10px;
+}
+.resume button a{
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: 600px;
+    color: #05FCDE;
+    
+} 
+.resume button:hover a{
+    color: #01E2F0;
+}
+.resume button span{
+    display: none;
+}
+.resume button:hover{
+    background-color: #592075;
+    color: #01e2f0;
+}
+.resume button:hover a{
+    color: #01E2F0;
+}
+.resume button:hover span{
+    display: inline;
+    color: #01E2F0;
+}
+/* .resume button:hover::before {
+    content: "\2013\00a0";
+    width: 50px;
+    display: inline-block;
+    /* border-bottom: 2px solid rgb(1, 226, 240); */
+/* } */ 
+/* .my-button:hover { 
+    background-color: #007bff; 
+    color: #fff; 
+  } 
+   
+  /* .my-button:hover::before { 
+    content: "\2014"; 
+  }  */
+  /* .my-button span{
+    display: none;
+  }
+  .my-button:hover span{
+    display: inline;
+  } */ */
+/* about me section */
+.about{
+    text-align: left;
+    margin-top: 100px;
+}
+.title{
+    font-size: 48px;
+    color: #94A3B8;
+    font-weight: 600px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+.title span{
+    color: #05FCDE;
+}
+.real_cont{
+    color: rgba(204, 193, 193, 0.71);
+    font-size: 32px;
+    font-weight: 500px;
+    margin-top: 36px;
+    padding: 10px 20px 10px 30px;
+}
+.about_content{
+    color: rgba(204, 193, 193, 0.71);
+    font-size: 32px;
+    font-weight: 500px;
+    /* margin-top: 10px; */
+}
+#about_section{
+    padding-top: 92px;
+}
+
+
+/* my work section */
+#myWork_section{
+    padding-top: 92px;
+}
+
+/* this is the responsive design for projects */
+
+/* the projects whole container */
+.projects{
+    margin-top: 25px;
+    display: flex;
+    gap: 35px;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 30px;
+    flex-shrink: 1;
+}
+/* this is project one background image */
+.project1{
+    background-image: url(../images/rwandan_flag.jpg);
+}
+.project2{
+    background-image: url(../../age-calculator-app-main/design/desktop-completed.jpg);
+}
+.project3{
+    background-image: url(../../../Pictures/etch-a-sketch.png);
+}
+/* the project div */
+.project{
+    width: 550px;
+    height: 320px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* this is the description 
+        will apply to all projects
+*/
+.descript{
+    color: #EDD8D8;
+    height: 320px;
+    width: 550px;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    background-image: none;
+    opacity: 0;
+    transition: all .3s ease-in;
+}
+.descript h1{
+    font-size: 32px;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 25px;
+}
+.descript p{
+    font-size: 24px;
+    font-weight: 400px;
+    line-height: normal;
+}
+
+
+/* the button to visit link */
+.project_btn{
+    align-self: flex-start;
+    padding: 15px 20px 15px;
+    gap: 4px;
+    font-size: 24px;
+    font-weight: 400;
+    color: #EDD8D8;
+    text-align: center;
+    background-color: rgba(217, 217, 217, 0.5);
+    border-radius: 43px;
+    background-image: none;
+    border: none;
+    margin-top: 9px;
+    flex-shrink: 1;
+}
+/*  hover effects on the visit link button*/
+.project_btn:hover{
+    background-color: #D9D9D9;
+    color: #FE6E05;
+}
+.project_btn:hover #arrow{
+    fill: rgb(254, 110, 5);
+    color: #FE6E05;
+}
+
+
+/* hover effects on the projects */
+.project:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+.project:hover .descript{
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.823);
+}
+
+
+/* container of button link to go to project page */
+.project_btn_cont{
+    background-color:#030712;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* opacity: 0.5; */
+    opacity: 1;
+}
+
+
+/* the button itself */
+.projects_btn_page{
+    background-color: #2C0F3A;
+    color: #02F2D6;
+    font-size: 36px;
+    font-weight: 500px;
+    line-height: normal;
+    border: none;
+    border-radius: 11px;
+    padding: 20px 44px;
+    opacity: 0.8;
+}
+
+
+/* adidng effects to the button */
+.project_btn_cont .projects_btn_page a{
+    text-decoration: none;
+    color: #02F2D6;
+    opacity: 1;
+}
+.projects_btn_page:hover {
+    background-color: #2C0F3A;
+    opacity: 1;
+}
+
+.projects_btn_page:hover a {
+    color: #0FF;
+    opacity: 1;
+}
+@media screen and (max-width: 750px) {
+    .descript{
+        width: auto;
+        overflow-y: scroll;
+    }
+    .project{
+        background-size: 100% 100%;
+    }
+    .projects_btn_page button{
+        flex-shrink: 1;
+
+    }
+}
+@media screen and (max-width: 650px) {
+    .projects_btn_page a{
+        font-size: 24px;
+    }
+    .projects_btn_page{
+        padding: 10px 25px;
+    }
+}
+
+
+
+
+
+
+/* test */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    gap: 50px;
+}
+.contact_cont{
+    display: flex;
+    gap: 50px;
+    justify-content: space-around;
+    align-items: center;
+}
+.contact_left{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.contact_right .message{
+    width: 600px;
+    height: 336px;
+    background: rgba(217, 217, 217, 0.00);
+    box-sizing:border-box ;
+    color: #CCC1C1;
+}
+.message::placeholder{
+    font-size: 32px;
+    font-weight: 500px;
+    color: #CCC1C1;
+    /* padding: 10px 34px; */
+}
+::placeholder{
+    font-size: 32px;
+    font-weight: 500px;
+    color: #CCC1C1;
+    /* padding: 10px 34px; */
+}
+.contact_input{
+    width: 100%;
+    height: 106px;
+    border: 1px solid #CCC1C1;
+    background: rgba(217, 217, 217, 0.00);
+    padding:  0 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    color: #CCC1C1;
+    font-size: 30px;
+}
+.submit_btn{
+    padding: 24px 50px;
+    border-radius: 10px;
+    background: rgba(44, 15, 58, 0.80);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: center;
+    font-size: 40px;
+    color: #02F2D6;
+    margin-top: 100px;
+}
+.contact_title{
+    margin-bottom: 100px;
+}
+@media screen and (max-width: 1200px) {
+    .contact_right .message{
+        width: 400px;
+
+    }
+    .contact_input{
+        width: 400px;
+    }
+}
+@media screen and (max-width: 900px) {
+    .contact_cont{
+        flex-wrap: wrap;
+    }
+    .contact_right .message{
+        width: 400px;
+        height: 336px;
+    }
+}
+/* responsiveness for projects */
+@media screen and (max-width: 1300px) {
+    .projects{
+        align-items: center;
+        justify-content: center;
+    }
+}
+/* responsiveness for body and hoepage */
+@media screen and (max-width: 1000px) {
+    body{
+        margin: 50px;
+        margin-left: 100px;
+    }
+    .home_page{
+        flex-wrap: wrap;
+        margin-left: 80px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .home_page{
+        flex-wrap: wrap;
+        margin-left: 20px;
+    }
+}
+@media screen and (max-width: 540px) {
+    .socials{
+        display: flex;
+        position: sticky;
+        left: 85%;
+        top: 78%;
+        width: fit-content;
+        background-color: rgba(255, 255, 255, 0.358);
+        backdrop-filter: blur(10px);
+        z-index: 999;
+        border-radius: 10px;
+    }
+    .socials hr{
+        display: none;
+    }
+    body{
+        margin: 0px;
+    }
+    .home_page{
+        padding-left: 10px;
+        margin-top: 70px;
+        margin-right: 50px;
+    }
+    .navbar{
+        padding: 10px;
+    }
+    .title{
+        font-size: 42px;
+        text-align: start;
+        padding: 10px 30px;
+    }
+    .contact_title{
+        text-align: center;
+    }
+    .about_content{
+        font-size: .875em;
+    }
+    .projects{
+        padding: 30px 5px;
+    }
+    .resume button a{
+        font-size: 30px;
+        font-weight: 400px;
+    }
+    .resume button{
+        padding: 10px 35px;
+    }
+    .submit_btn{
+        padding: 20px 35px;
+        font-size: 35px;
+        width: fit-content;
+    }
+}
+
+
+/* #name{
+    gap: 10px;
+} */
+
+/* input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+} */

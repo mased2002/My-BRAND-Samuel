@@ -1,0 +1,297 @@
+body{
+    margin: 0px 120px;
+    min-height: 100vh;
+    font-family: sans-serif;
+    background-color: #030712;
+    box-sizing: border-box;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* the nav with the picture of the person */
+.nav{
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    background-color: rgb(3, 7, 18, 0.5);
+    z-index: 1000;
+    padding: 0 120px 0 120px;
+    min-height: fit-content;
+}
+.nav .hr_div hr{
+    height: auto;
+    border-width: 2px;
+    border-color: #05FCDE;
+    background-color: #05FCDE;
+    flex-grow: 1;
+}
+.hr_div{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    z-index: -1;
+}
+.nav img{
+    width: 190px;
+    height: 255px;
+    flex-shrink: 1;
+    border-radius: 97px;
+}
+
+/* socials bar*/
+.socials{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 27px;
+    position: fixed;
+    top: 190px;
+    left: 31px;
+}
+.socials hr{
+    width: 3px;
+    height: 350px;
+    border-color: #05FCDE;
+    background-color: #05FCDE;
+}
+.socials_1{
+    display: flex;
+    flex-direction: column;
+}
+
+/* nav links is good */
+.nav_links{
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    top: 190px;
+    right: 31px;
+}
+.nav_links a{
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    color: #51C4B6;
+    text-decoration: none;
+}
+.nav_links ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+
+}
+.nav_links li hr{
+    width: 3px;
+    height: 350px;
+    border-color: #05FCDE;
+    background-color: #05FCDE;
+}
+.nav_links a:hover{
+    color: #05FCDE;
+    font-size: 32px;
+}
+
+/* title of the page and subtitles */
+.title{
+    color: #94a3b8;
+    /* font-size: 50px; */
+    font-weight: 500;
+    /* margin-top: 40px; */
+}
+.title p{
+    color: #475569;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: normal;
+    font-style: italic;
+    margin-top: 30px;
+    margin-bottom: 35px;
+}
+.page_title{
+    font-size: 35px;
+    margin-top: 40px;
+}
+.project_title{
+    font-size: 28px;
+}
+/* page projects */
+.projects{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0;
+    flex-shrink: 1;
+    gap: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 25px;
+    justify-content: center;
+}
+.project{
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    gap: 20px;
+    height: auto;
+}
+.project1{
+    background-image: url(../images/rwandan_flag.jpg);
+}
+.project_image{
+    width: 40%;
+    height: 250px;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.project_subtitle{
+    padding-top: 20px;
+}
+/*the text of the project*/
+.project_text{
+    text-align: start;
+    width: 50%;
+}
+.tools{
+    margin-top: 20px;
+}
+.project_text .tools ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 5px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+.tools ul li{
+    background-color: #7F4a84;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 8px;
+    color: #05FCDE;
+    font-size: 1.2em;
+    font-weight: 400;
+    border-radius: 5px;
+}
+/* about the project */
+.short_description{
+    color: #475569;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    padding-top: 10px;
+}
+.sidebar_navlinks{
+    display: flex;
+    background-color: white;
+    width: 100%;
+    background-color: #030712;
+    justify-content: center;
+    display: none;
+}
+.sidebar_navlinks ul{
+    display: flex;
+    gap: 10px;
+    width: fit-content;
+    list-style: none;
+}
+.sidebar_navlinks li a{
+    text-decoration: none;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    color: #51C4B6;
+    text-decoration: none;
+}
+.sidebar_navlinks li a:hover{
+    color: #05FCDE;
+    font-size: 32px;
+}
+
+/* side bar nav links */
+
+/* projects div media screens */
+@media screen and (max-width: 1100px) {
+    .project_image{
+        width: 50%;
+    }
+    .project{
+        gap: 10px;
+    }
+    .project_text{
+        width: 40%;
+    }
+}
+@media screen and (max-width: 950px) {
+    .project{
+        flex-wrap: wrap;
+    }
+    .project_image{
+        width: 80%;
+        height: 250px;
+    }
+    .project_text{
+        width: 80%;
+    }
+    .projects{
+        gap: 50px;
+    }
+}
+/* socials become a skicky on right hand side */
+@media screen and (max-width: 540px) {
+    .socials{
+        display: flex;
+        position: sticky;
+        left: 90%;
+        top: 78%;
+        width: fit-content;
+        background-color: rgba(255, 255, 255, 0.358);
+        backdrop-filter: blur(10px);
+        z-index: 999;
+        border-radius: 10px;
+    }
+    .socials hr{
+        display: none;
+    }
+    body{
+        margin: 0px 0 0 0;
+    }
+    .page_title{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-left: 20px;
+    }
+    .page_title h1{
+        font-size: 1.5em;
+    }
+    .sidebar_navlinks{
+        display: flex;
+        margin-top: -130px;
+    }
+    .page_title {
+        margin-top: 50px;
+    }
+    .nav_links{
+        display: none;
+    }
+    .projects{
+        gap: 50px;
+    }
+}

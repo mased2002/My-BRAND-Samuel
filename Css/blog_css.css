@@ -1,0 +1,219 @@
+body{
+    margin: 0px 120px;
+    min-height: 100vh;
+    font-family: sans-serif;
+    background-color: #030712;
+    box-sizing: border-box;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.blog_title h1{
+    color: #94a3bb;
+    font-size: 40px;
+    font-weight: 600px;
+    line-height: normal;
+    font-style: normal;
+    margin-top: 55px;
+}
+.blog_title{
+    margin-top: 100px;
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+}
+
+/* this is the search input */
+.search_cont{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+#locationInput {
+    box-sizing: border-box;
+    padding: 10px 25px 10px 35px;
+    color: #CCC1C1;
+    font-size: 20px;
+    background-color: #030712;
+    background-image: url(../icons/magnifying-glass-solid.svg);
+    background-repeat: no-repeat;
+    background-position: 2px center;
+    background-size: 1.2em;
+    border: 1px solid #CCC1C1;
+    width: fit-content;
+}
+/* #locationInput{
+    padding-left: 50px
+} */
+
+/* words and text */
+.content .card .article_title{
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: #B6C1D0;
+    line-height: normal;
+    padding-top: 0.65em;
+    padding-left: 0.65em;
+    line-height: 1.15;
+}
+.content .card .article_short_description{
+    font-size: 1em;
+    line-height: 1.45;
+    color: #8D9DB3;
+    padding: 0.65em;
+    font-weight: 300;
+}
+
+/*  */
+.blog_articles{
+    /* width: 80%; */
+    width: 100%;
+    /* margin: auto;  */
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: auto; */
+    gap: 1.2em;
+    /* flex-wrap: wrap; */
+    width: 100%;
+}
+.content .card{
+    width: 21.8em;
+    height: auto;
+    /* flex: 1; */
+    /* margin: 50px 20px; */
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1);
+    border: 3px solid #000;
+    background: rgba(204, 193, 193, 0.08);
+    background-size: 100% 100%;   
+    box-sizing: border-box;
+    cursor: pointer;
+    position: relative;
+}
+.content .card img{
+    width: 100%;
+    height: 200px;
+}
+.content a{
+    text-decoration: none;
+}
+/* .content .card h1{
+    margin-top: 0.65em;
+    margin-left: 0.65em;
+    font-size: 1.125em;
+}   */
+/* .content .card p{
+    font-size: 1.3em;
+    color: #8D9DB3;
+    padding: 0.65em;
+    font-weight: 300;
+} */
+.hover_card{
+    background-color: rgba(255, 0, 0, 0.195);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 3s ease-in;
+    display: none;
+}
+.content .card:hover .hover_card{
+    display: block;
+}
+.content .card:hover{
+    transform: scale(1.1);
+}
+@media screen and (max-width: 1000px) {
+    .content{
+        gap: 0.2em;
+        margin: 0;
+        flex-wrap: wrap;
+        /* justify-content: space-between; */
+    }
+
+    .blog_title{
+        margin-left: 0;
+    }
+    body{
+        margin: 0px 50px;
+    }
+    .blog_title h1{
+        font-size: 2em;
+        margin-left: 50px;
+    }
+}
+@media screen and (max-width: 900px) {
+    body{
+        margin: 0px 0;
+    }
+    .content{
+        gap: 0.5em;
+        margin: 0;
+        flex-shrink: 1;
+        flex-wrap: wrap;
+    }
+    .navbar{
+        padding: 10px;
+    }
+    .socials{
+        display: flex;
+        position: sticky;
+        left: 85%;
+        top: 78%;
+        width: fit-content;
+        background-color: rgba(255, 255, 255, 0.358);
+        backdrop-filter: blur(10px);
+        z-index: 999;
+        border-radius: 10px;
+    }
+    .socials hr{
+        display: none;
+    }
+    body{
+        margin: 0px;
+    }
+    .blog_title{
+        margin-top: 0em;
+    }
+    .search_cont{
+        margin-bottom: 25px;
+    }
+}
+@media screen and (max-width: 796px) {
+    .content{
+        gap: 0.5em;
+    }
+    .content .card{
+        margin: 0;
+    }
+}
+@media screen and (max-width: 400px) {
+    .blog_title h1{
+        font-size: 1.5em;
+        margin-left: 10px;
+    }
+    .search_cont{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 10px; 
+    }
+    #locationInput{
+        width: 60%;
+    }
+    .content{
+        justify-content: flex-start;
+         padding-left: 10px; 
+    }
+    .socials{
+        left: 80%;
+        top: 78%;
+        width: fit-content;
+    }
+}

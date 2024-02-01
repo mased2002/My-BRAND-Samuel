@@ -1,0 +1,206 @@
+body{
+    margin: 0px 120px;
+    min-height: 100vh;
+    font-family: sans-serif;
+    background-color: #030712;
+    box-sizing: border-box;
+}
+*{
+    font-family: sans-serif;
+    /* padding: 0;
+    margin: 0; */
+}
+.nav_img{
+    width: 70px;
+    height: 92px;
+    border-radius: 68px;
+}
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    width: auto;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    /* padding: 20px; */
+    background-color: rgb(3, 7, 18, 0.5);
+    z-index: 1000;
+    /* position: fixed; */
+    padding: 0 120px 0 120px;
+}   
+
+
+/*this is the hambuger button links  */
+.side_bar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 50%;
+    z-index: 999;
+    background-color: rgba(3, 7, 18, 0.681);
+    backdrop-filter: blur(100px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.side_bar ul .svg_hover{
+    position: absolute;
+    top: 28px;
+    right: 0;
+}
+.side_bar ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 54px;
+    list-style: none;
+}
+.side_bar li{
+    width: 100%;
+}
+/* .side_bar a{
+    width: 100%;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    color: #51C4B6;
+    text-decoration: none;
+    padding: 0 30px;
+}
+.side_bar a:hover{
+    color: #05FCDE;
+    font-size: 32px;
+} */
+.side_bar a{
+    padding: 0 35px;
+}
+.svg_hover{
+    fill: #51C4B6;
+}
+a .svg_hover:hover{
+    fill: #05FCDE;
+}
+.menu_btn{
+    display: none;
+}
+
+
+/* responsive for tablets */
+
+
+
+.nav_links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 54px;
+}
+@media screen and (max-width: 800px) {
+    .hideOnMobile{
+        display: none;
+    }
+    .menu_btn{
+        display: block;
+    }
+}
+@media screen and (max-width: 400px){
+    .side_bar{
+        width: 100%;
+        align-items: center;
+        padding-top: 50px;
+        text-align: center;
+    }
+}
+.nav_btn{
+    width: 120px;
+    height: 60px;
+    font-size: 32px;
+    border-radius: 9px;
+    font-weight: 500;
+    display: none;
+}
+.navbar.nav_btn:hover{
+    display: blockS;
+}
+.navbar2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 49px;
+}
+/* for all btns */
+.btn{
+    background-color: #2C0F3A;
+    color: #05FCDE;
+    border: none;
+}
+.btn:hover{
+    color: #01E2F0;
+}
+.navbar a{
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    color: #51C4B6;
+    text-decoration: none;
+}
+.navbar a:hover{
+    color: #05FCDE;
+    font-size: 32px;
+}
+/* this is the socials div */
+.socials{
+display: inline-flex;
+flex-direction: column;
+align-items: center;
+gap: 27px;
+position: fixed;
+top: 102px;
+left: 31px;
+}
+.socials hr{
+    width: 3px;
+    height: 428px;
+    border-color: #05FCDE;
+    background-color: #05FCDE;
+}
+.socials_1{
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (max-width: 1000px) {
+    .navbar{
+        padding: 0 50px 0 50px;
+    }
+    .socials{
+        left: 50px;
+    }
+
+}
+/* socials become a skicky on right hand side */
+@media screen and (max-width: 540px) {
+    .socials{
+        display: flex;
+        position: sticky;
+        left: 85%;
+        top: 78%;
+        width: fit-content;
+        background-color: rgba(255, 255, 255, 0.358);
+        backdrop-filter: blur(10px);
+        z-index: 999;
+        border-radius: 10px;
+    }
+    .socials hr{
+        display: none;
+    }
+    body{
+        margin: 0px;
+    }
+}
