@@ -1,0 +1,113 @@
+*{
+    font-family: sans-serif; 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.contact_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin: auto; */
+    margin-top: 130px;
+}
+.contact_container .form_contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin: 20px; */
+    margin-top: 20px;
+    gap: 15px;
+    width: 80%;
+}
+.contatct_title{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contatct_title  h1{
+    font-size: 48px;
+    color: #94A3B8;
+    font-weight: 600px;
+    margin-bottom: 20px;
+}
+.contatct_title p{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    background-image: linear-gradient(180deg, #bab8b8 69%, rgba(237, 216, 216, 0.00) 100%);
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 20px;
+}
+.form_input{
+    width: 70%;
+    height: 3.5em;
+    background-color: #030712;
+    border: 1px solid #58525295;
+    border-radius: 5px;
+    /* border: none; */
+    color: #CCC1C1;
+    padding: 10px 20px;
+    font-size: 18px;
+}
+.form_input:focus{
+    background-color: #161920;
+
+}
+#message{
+    height: 200px;
+}
+.message_btn{
+    padding: 8px 25px;
+    font-size: 24px;
+    background-color: #2C0F3A;
+    color: #02F2D6;
+    opacity: 0.8;
+    margin-top: 30px;
+    border: none;
+    border-radius: 6px;
+}
+@media screen and (max-width: 1000px) {
+    .contatct_title{
+        width: 80%;
+        align-items: flex-start;
+    }
+    .contact_container .form_contact{
+        align-items: flex-start;
+        margin-top: 20px;
+        gap: 15px;
+        width: 80%;
+    }
+    .message_btn{
+        align-self: center;
+    }
+    .form_input{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 500px) {
+    .contatct_title{
+        width: 100%;
+    }
+    .contact_container .form_contact{
+        width: 100%;
+    }
+    .form_input{
+        width: 80%;
+    }
+    .contact_container{
+        margin-left: 10px;
+    }
+    .navbar{
+        padding: 0 10px;
+    }
+    .message_btn{
+        align-self: flex-start;
+        padding: 6px 15px;
+    }
+}
