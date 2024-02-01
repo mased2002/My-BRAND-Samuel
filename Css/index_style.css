@@ -65,19 +65,6 @@ body{
 .side_bar li{
     width: 100%;
 }
-/* .side_bar a{
-    width: 100%;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 500;
-    color: #51C4B6;
-    text-decoration: none;
-    padding: 0 30px;
-}
-.side_bar a:hover{
-    color: #05FCDE;
-    font-size: 32px;
-} */
 .side_bar a{
     padding: 0 35px;
 }

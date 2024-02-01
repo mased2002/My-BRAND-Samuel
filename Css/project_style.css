@@ -149,7 +149,13 @@ body{
     height: auto;
 }
 .project1{
-    background-image: url(../../My-BRAND-Samuel/images/rwandan_flag.jpg);
+    background-image: url(../images/rwandan_flag.jpg);
+}
+.project2{
+    background-image: url(../images/desktop-completed.jpg);
+}
+.project3{
+    background-image:url(../images/etch-a-sketch.png) ;
 }
 .project_image{
     width: 40%;
