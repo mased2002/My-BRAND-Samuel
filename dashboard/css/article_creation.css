@@ -1,0 +1,80 @@
+
+.control_panel{
+    height: 715px;
+    margin: auto 0;
+    position: sticky;
+    top: 0;
+}
+.article_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px; 
+    width: 100%;
+}
+.article_container form{
+    display: flex;
+    flex-direction: column;
+    /* margin: 20px; */
+    margin-top: 20px;
+    gap: 15px;
+    width: 80%;
+}
+.article_page_title {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+
+}
+.article_page_title  h1{
+    font-size: 48px;
+    color: #94A3B8;
+    font-weight: 600px;
+    margin-bottom: 20px;
+}
+.form_input{
+    width: 70%;
+    height: 3.5em;
+    background-color: #030712;
+    border: 1px solid #58525295;
+    border-radius: 5px;
+    /* border: none; */
+    color: #CCC1C1;
+    padding: 10px 20px;
+    font-size: 18px;
+}
+.form_input:focus{
+    background-color: #161920;
+
+}
+#content{
+    height: 200px;
+}
+.submit_btn{
+    padding: 8px 25px;
+    font-size: 24px;
+    background-color: #2C0F3A;
+    color: #02F2D6;
+    opacity: 0.8;
+    margin-top: 30px;
+    border: none;
+    border-radius: 6px;
+    width: fit-content;
+}
+.submit_btn:hover{
+    background-color: #592075;
+    color: #01E2F0;
+}
+.label_article{
+    color: #CCC1C1;
+    font-size: 24px;
+    font-weight: 500;
+}
+.content_div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    height: fit-content;
+    margin-bottom: 20PX;
+}

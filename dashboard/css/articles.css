@@ -1,0 +1,153 @@
+/* TaB is text and button the ones on top */
+body{
+    height: auto;
+}
+.article_control_page{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    gap: 50px;
+    width: 80%;
+    padding: 20px;
+    /* justify-content: center; */
+}
+.TaB h1{
+    color: #94a3b8;
+    font-size: 40px;
+    font-weight: 500;
+}
+.TaB{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.TaB .new_article{
+    padding: 10px 25px;
+    background-color: #331442;
+    border-radius: 10px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.new_article .icon{
+    color: #05Fcde;
+    font-size: 28px;
+    font-weight: 500;
+}
+.new_article .text{
+    color: #05fcde;
+    font-size: 28px;
+    font-weight: 500;
+}
+.TaB a{
+    text-decoration: none;
+}
+/* articles */
+.articles{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+}
+.article_cont{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+}
+.article_cont hr{
+    border-color: #05FCDE;
+    background: #05FCDE;
+    height: 3px;
+    width: 60%;
+    align-self: center;
+    flex-shrink: 1;
+}
+.article{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+.article p{
+    font-size: 22px;
+    font-weight: 500;
+}
+.article .name_of_article{
+    color: #94a3b8;
+}
+.article .name_of_author{
+    color: #05Fcde;
+}
+.article .date{
+    color: #94a3b8;
+    width: auto;
+}
+.article .views{
+    display: flex;
+    gap: 5px;
+}
+.views .icon .svg_icon{
+    fill: #05Fcde;
+}
+.views .number{
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: 500;
+}
+/* this is buttons of delete and edit */
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.buttons .article_icon{
+    width: 30px;
+    height: 30px;
+}
+/* this is article icons in the article */
+.article_btn{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.edit_icon{
+    fill: #05Fcde;
+}
+.delete_icon{
+    fill: #ff0000;
+
+}
+/* responsive  */
+
+@media screen and (max-width: 1000px) {
+    .container{
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .article{
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+    .article_cont{
+        width: 100%;
+    }
+    .article_cont hr{
+        width: 100%;
+    }
+    .TaB{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .container{
+        width: 100%;
+    }
+    .control_panel .cotrol_panel_hr{
+        height: 512px;
+    }
+}

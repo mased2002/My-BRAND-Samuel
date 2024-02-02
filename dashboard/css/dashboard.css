@@ -1,0 +1,213 @@
+/* the status_nat is for the div with the number and text */
+
+*{
+    font-family: sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    background-color: #030712;
+}
+.container{
+    background-color: #030712;
+    display: flex;
+    width: 70%;
+}
+/* this contains the left side of the dashboard */
+.control_panel{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+/* these are the links to other pages */
+.control_panel_links{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 10px 20px 30px 20px; 
+    align-items: center;
+}
+.control_panel_links .image img{
+    width: 100px;
+    height: auto;
+    border-radius: 50px;
+}
+.control_panel_links .image{
+    width: fit-content;
+    /* border: 1px solid red; */
+}
+.control_panel_links .links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* align-items: flex-start;
+    justify-content: flex-start; */
+}
+.control_panel_links .links ul{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    text-align: center;
+}
+.control_panel_links .links li{
+    width: 100%;
+}
+.control_panel_links .links a{
+    text-decoration: none;
+    color: #94A3B8;
+    font-size: 24px;
+}
+/* links a hover */
+.control_panel_links .links a:hover{
+    color: #eed9d9;
+}
+/* last child */
+.control_panel_links .links li:last-child{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* this is the hr */
+.control_panel .cotrol_panel_hr{
+    width: 3px;
+    height: 80%;
+}
+.cotrol_panel_hr hr{
+    width: 100%;
+    border-color: #05FCDE;
+    background-color: #05FCDE;
+    height: 100%;
+}
+
+
+
+
+/* this is the rigth side content */
+.status_control{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    height: fit-content;
+    padding-left: 15px;
+    /* margin-top: 45px; */
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+.status_div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1.2em;
+    padding: 40px 25px;
+    border: 1px solid red;
+    background-color: #331442;
+}
+.status_div .status_nat{
+    display: flex;
+    flex-direction: column;
+    gap: 0.15em;
+}
+/* the text and icons colors */
+.status_nat .number{
+    color: #94A3B8;
+    font-size: 26px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: normal;
+}
+.status_nat .text{
+    color: #94a3b8;
+    font-size: 16px;
+    font-weight: 300;
+    font-style: normal;
+    line-height: normal;
+}
+
+
+/* icon */
+.icon .svg_icon{
+    fill: #05FCDE;
+}
+
+/* top coments */
+.top_comments{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #331442;
+    padding: 20px;
+}
+.top_comments h1{
+    color: #94a3b8;
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 20px;
+   
+}
+
+.control_content{
+    display: flex;
+    gap: 50px;
+    padding-top: 45px;
+}
+.comment_cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.comment{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    width: 80%;
+    justify-content: center;
+}
+.comment .name_of_comment{
+    color: #05FCDE;
+    font-size: 28px;
+    font-family: 500;
+    margin-bottom: 5px;
+}
+.comment .on_blog{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+   margin-bottom: 8px;
+}
+.comment .on_blog .blog_comment_on{
+    color: #94a3b8;
+    font-size: 20px;
+    font-weight: 500;
+    font-style: normal;
+}
+.comment .on_blog p{
+    color: #94a3b8;
+    font-size: 1em;
+    font-weight: 400;
+}
+.comment_content{
+    color: #CCC1C1;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 35px;
+}
+.comment_cont hr{
+    border-color: #05FCDE;
+    background: #05FCDE;
+    height: 3px;
+    width: 60%;
+    align-self: center;
+    flex-shrink: 1;
+}

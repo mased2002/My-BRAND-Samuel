@@ -1,0 +1,101 @@
+.project_control_page{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 80%;
+    padding: 20px;
+}
+.TaB h1{
+    color: #94a3b8;
+    font-size: 40px;
+    font-weight: 500;
+}
+.TaB{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.TaB .new_project{
+    padding: 10px 25px;
+    background-color: #331442;
+    border-radius: 10px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.new_project .icon{
+    color: #05Fcde;
+    font-size: 28px;
+    font-weight: 500;
+}
+.new_project .text{
+    color: #05fcde;
+    font-size: 28px;
+    font-weight: 500;
+}
+.TaB a{
+    text-decoration: none;
+}
+.projects{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    /* align-items: center; */
+}
+.project_cont{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+}
+.project_cont hr{
+    border-color: #05FCDE;
+    background: #05FCDE;
+    height: 3px;
+    width: 60%;
+    align-self: center;
+    flex-shrink: 1;
+}
+.project{
+    display: flex;
+    justify-content: space-around;
+}
+.project p{
+
+    font-size: 22px;
+    font-weight: 500;
+
+}
+.project .name_of_project{
+    color: #94a3b8;
+}
+.project .date{
+    color: #94a3b8;
+    width: auto;
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.buttons .article_icon{
+    width: 30px;
+    height: 30px;
+}
+/* this is article icons in the article */
+.article_btn{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.edit_icon{
+    fill: #05Fcde;
+}
+.delete_icon{
+    fill: #ff0000;
+
+}
+

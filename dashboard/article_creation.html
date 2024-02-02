@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>creating article form</title>
+    <link rel="stylesheet" href="css/links_css.css">
+    <link rel="stylesheet" href="css/article_creation.css">
+</head>
+<body>
+    <div class="container">
+    <div class="control_panel">
+        <div class="control_panel_links">
+            <div class="image">
+                <img src="assets/image/WhatsApp Image 2024-01-19 at 13.56.17(2).jpeg" alt="">
+            </div>
+            <div class="links">
+                <ul>
+                    <li><a href="comments.html">Comments</a></li>
+                    <li><a href="projects_dash.html">projects</a></li>
+                    <li><a href="articles.html">Blog</a></li>
+                    <li><a href="messages.html">messages</a></li>
+                    <li><svg class="logout_icon" width="40" height="40" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M6.25 26.0416H31.25V23.9583H6.25V26.0416Z" fill="#CCC1C1"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.8037 16.9709L5.51208 24.2625C5.41508 24.3593 5.33811 24.4742 5.2856 24.6008C5.23309 24.7273 5.20605 24.863 5.20605 25C5.20605 25.137 5.23309 25.2727 5.2856 25.3993C5.33811 25.5258 5.41508 25.6408 5.51208 25.7375L12.8037 33.0292L14.2787 31.5563L7.7225 25L14.2787 18.4459L12.8037 16.9709ZM17.7079 8.33335C17.7079 8.05709 17.8177 7.79213 18.013 7.59678C18.2084 7.40143 18.4733 7.29169 18.7496 7.29169H43.7496C44.0259 7.29169 44.2908 7.40143 44.4862 7.59678C44.6815 7.79213 44.7912 8.05709 44.7912 8.33335V41.6667C44.7912 41.943 44.6815 42.2079 44.4862 42.4033C44.2908 42.5986 44.0259 42.7084 43.7496 42.7084H18.7496C18.4733 42.7084 18.2084 42.5986 18.013 42.4033C17.8177 42.2079 17.7079 41.943 17.7079 41.6667V35.4167H19.7912V40.625H42.7079V9.37502H19.7912V14.5834H17.7079V8.33335Z" fill="#CCC1C1"/>
+                      </svg><a href="">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="cotrol_panel_hr"><hr/></div>
+    </div>
+    <div class="article_container">
+        <div class="article_page_title">
+            <h1>New Article</h1>
+        </div> 
+        <form class="article_form">
+         <div class="content_div">
+            <label for="Atitle" class="label_article">Article title</label>
+            <input type="text" id="Atitle" name="article title" placeholder="title"  class="form_input" required><br>
+        </div>
+        <div class="content_div">
+            <label for="tags" class="label_article">Tags</label>
+            <input type="text" id="tags" name="tags" placeholder="@" class="form_input">
+        </div>
+        <div class="content_div">
+            <label for="authors" class="label_article">Authours</label>
+            <input type="text" id="authors" name="authors" placeholder="@" class="form_input" required>
+        </div>
+        <div class="content_div">
+            <label for="content" class="label_article">Article Content</label>
+            <textarea name="content" id="content" placeholder="content" class="form_input" required></textarea>
+        </div>
+            <button class="submit_btn">create article</button>
+          </form>
+    </div>
+</div>
+</body>
+</html>
