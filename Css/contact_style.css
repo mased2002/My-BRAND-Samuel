@@ -59,6 +59,25 @@
     background-color: #161920;
 
 }
+.content_div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    height: fit-content;
+    margin-bottom: 20PX;
+    width: 100%;
+}
+/* for the errors */
+.error{
+    padding: 10px ;
+    display: none;
+}
+.error{
+    color: red;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 300;
+}
 #message{
     height: 200px;
 }

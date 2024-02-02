@@ -6,6 +6,8 @@
     <title>contact us</title>
     <link rel="stylesheet" href="Css/nav_sidebar.css">
     <link rel="stylesheet" href="Css/contact_style.css">
+    <!-- javascript -->
+    <script src="javascript/contact.js" defer></script>
 </head>
 <body>
     <div class="navbar">
@@ -73,11 +75,23 @@
             <h1>Let's Connect</h1>
             <p>Get in touch with me. say Hello</p>
         </div>
-        <form action="" class="form_contact">
+        <form action="" class="form_contact" id="contact_form_id">
+            <div class="content_div">
             <input type="text" id="name" name="name" placeholder="Name"  class="form_input" required>
+            <div class="error" id="error_name">this is an error</div>
+        </div>
+        <div class="content_div">
             <input type="email" id="email" name="email" placeholder="E-mail"   class="form_input" required>
-            <input type="url" id="website" name="website" placeholder="website(optional)" class="form_input" required>
+            <div class="error" id="error_email">this is an error</div>
+        </div>
+        <div class="content_div">
+            <input type="url" id="website" name="website" placeholder="website(optional)" class="form_input">
+            <div class="error" id="error_website">this is an error</div>
+        </div>
+        <div class="content_div">
             <textarea id="message" name="message" placeholder="Message" class="form_input" required></textarea>
+            <div class="error" id="error_message">this is an error</div>
+        </div>
             <button type="submit" class="message_btn">Send Message</button>
         </form>
     </div>
