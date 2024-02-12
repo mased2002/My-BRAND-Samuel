@@ -54,6 +54,7 @@ body{
     flex-direction: column;
     gap: 30px;
     justify-content: center;
+    width: 100%;
 }
 .article_cont hr{
     border-color: #05FCDE;
@@ -67,6 +68,8 @@ body{
     display: flex;
     gap: 40px;
     align-items: center;
+    width: 100%;
+    justify-content: space-between;
 }
 .article p{
     font-size: 22px;
@@ -119,6 +122,17 @@ body{
 .delete_icon{
     fill: #ff0000;
 
+}
+.control_hr{
+    border-color: #05FCDE;
+    background: #05FCDE;
+    height: 3px;
+    width: 60%;
+    align-self: center;
+    flex-shrink: 1;
+}
+.nodisplay{
+    display: none;
 }
 /* responsive  */
 

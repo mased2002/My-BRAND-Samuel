@@ -98,4 +98,14 @@
     fill: #ff0000;
 
 }
-
+.nodisplay{
+    display: none;
+}
+.control_hr{
+    border-color: #05FCDE;
+    background: #05FCDE;
+    height: 3px;
+    width: 60%;
+    align-self: center;
+    flex-shrink: 1;
+}

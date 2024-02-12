@@ -79,6 +79,6 @@ submitBtn.addEventListener("click", function (e) {
   }
 
   if (isValid && isValid_pass) {
-    window.open('dashboard.html');
+    window.open('dashboard.html', '_blank');
   }
 });
