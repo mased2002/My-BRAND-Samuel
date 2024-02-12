@@ -70,8 +70,8 @@
     color: #94a3b8;
 }
 .project .date{
-    color: #94a3b8;
-    width: auto;
+    color: #05Fcde;
+    width: fit-content;
 }
 .buttons{
     display: flex;
