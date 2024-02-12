@@ -93,7 +93,7 @@ const deleteLogic = (elementToDelete) =>{
 // edit logic
 const editLogic = (elementToEdit) => {
     const articleId = elementToEdit.querySelector(".nodisplay").textContent
-    window.location.href = `../article_edit.html?id=${articleId}`;
+    window.location.href = `article_edit.html?id=${articleId}`;
 }
 
 // create date

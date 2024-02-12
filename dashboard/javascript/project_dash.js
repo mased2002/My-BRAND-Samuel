@@ -67,8 +67,8 @@ const editLogic = (elementToEdit) => {
     // const projectId = Object.keys(projectElementMap).find(key => projectElementMap[key] === elementToEdit)
     const projectId = elementToEdit.querySelector(".nodisplay").textContent
   
-    // window.location.href = `../project_edit.html?id=${projectId}`;
-    window.open("project_edit.html")
+    window.location.href = `project_edit.html?id=${projectId}`;
+    // window.open("project_edit.html")
 }
 
  const deleteLogic = (elementToDelete) => {
