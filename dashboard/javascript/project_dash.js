@@ -68,7 +68,7 @@ const editLogic = (elementToEdit) => {
     const projectId = elementToEdit.querySelector(".nodisplay").textContent
   
     // window.location.href = `../project_edit.html?id=${projectId}`;
-    window.open("../project_dash.html")
+    window.open("project_dash.html")
 }
 
  const deleteLogic = (elementToDelete) => {
