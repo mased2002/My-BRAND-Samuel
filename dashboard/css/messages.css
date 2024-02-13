@@ -78,3 +78,14 @@ font-weight: 500;
     width: 30px;
     height: 30px;
 }
+.nodisplay{
+    display: none;
+}
+.message_hr{
+    border-color: #05FCDE;
+    background: #05FCDE;
+    height: 3px;
+    width: 60%;
+    align-self: center;
+    flex-shrink: 1;
+}
