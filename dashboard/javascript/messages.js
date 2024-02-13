@@ -40,7 +40,7 @@ function createMessage(msg){
     buttons.append(replyBtn, deleteBtn)
     messageContentCont.appendChild(messageContent)
     message.append(messageContentCont, senderName, date, buttons)
-    messageCont.appendChild(messageCont, messageHr)
+    messageCont.append(messageCont, messageHr)
     messagesContainer.appendChild(messageCont)
 }
 
