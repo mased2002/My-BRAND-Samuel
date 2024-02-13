@@ -58,7 +58,7 @@ export function makeViewsIcon(){
     return viewIcon;
 }
 
-export function makeReplyIcon(){
+export function makeReplyIcon(openReplyPage){
     const replyIcon = document.createElementNS("http://www.w3.org/2000/svg", "svg");
     replyIcon.setAttribute("class", "reply_icon")
     replyIcon.setAttribute("viewBox", "0 -960 960 960")
@@ -67,6 +67,11 @@ export function makeReplyIcon(){
     const pathElement = document.createElementNS("http://www.w3.org/2000/svg", "path")
     pathElement.setAttribute("d", "M760-200v-160q0-50-35-85t-85-35H273l144 144-57 56-240-240 240-240 57 56-144 144h367q83 0 141.5 58.5T840-360v160h-80Z")
     replyIcon.appendChild(pathElement)
+
+    // Attach the reply function to click event
+    replyIcon.onclick = function() {
+        openReplyPage(this.parentElement.parentElement)
+    }
 
     return replyIcon;
 }
