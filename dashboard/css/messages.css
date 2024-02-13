@@ -21,8 +21,17 @@
 .article_icon{
 
 } */
-
+.messages{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+}
 .message_cont{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
     width: 100%;
 }
 .message{
@@ -31,6 +40,13 @@
     justify-content: space-between;
     padding: 5px 10px;
     align-items: center;
+    width: 100%;
+/* 
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between; */
 }
 
 .name_of_sender{
