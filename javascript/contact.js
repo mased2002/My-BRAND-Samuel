@@ -1,6 +1,7 @@
+ import { addToLS } from "../dashboard/javascript/common_local.js"; 
  // Fetching input values and patterns (same as before)
  
-
+let messages = JSON.parse(localStorage.getItem("messages")) || [];
 
  
 
@@ -80,7 +81,18 @@ function validateForm() {
         messageError.textContent = 'Message must be at least 10 characters';
     }
 }
-
+function newMessage(){
+    const nameof = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const website = document.getElementById('website').value;
+    const message = document.getElementById('message').value;
+    return {
+        senderName: nameof,
+        senderEmail: email,
+        senderWebsite: website,
+        message: message
+    }
+}
 
 
 // Add event listeners for input changes
@@ -94,5 +106,8 @@ document.getElementById('contact_form_id').addEventListener('submit', function (
     // Prevent form submission if validation fails
     if (!validateForm()) {
         event.preventDefault();
+    }else{
+        messages.push(newMessage())
+        addToLS("messages", JSON.stringify(messages))
     }
 });
