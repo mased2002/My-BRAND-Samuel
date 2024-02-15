@@ -6,7 +6,7 @@ function createBlog(article){
     // const BlogContainer = document.createElement("div")
     const blog = document.createElement("div")
     const hoverBlogContainer = document.createElement("div")
-    const blogImgLink = makeImg()
+    const blogImgLink = makeImg(article)
     const blogTitle = document.createElement("h1")
     const blogDescipt = document.createElement("p")
 
@@ -41,6 +41,6 @@ function makeImg(art){
 }
 for(let i = 0; i < articles.length; i++){
     const currentArticle = articles[i]
-    makeImg(currentArticle)
+    // makeImg(currentArticle)
     createBlog(currentArticle)
 }
