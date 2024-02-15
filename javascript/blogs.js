@@ -12,7 +12,7 @@ function createBlog(article){
 
     // fill content
     blogTitle.textContent = article.blogTitle
-    blogDescipt.textContent = article.blogDescipt
+    blogDescipt.textContent = article.blogContent
 
     // setting classes
     // BlogContainer.classList.add("content")
