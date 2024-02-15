@@ -34,3 +34,7 @@ function makeImg(art){
 
     return blogImg;
 }
+for(let i = 0; i < articles.length; i++){
+    makeImg(articles[i])
+    createBlog(articles[i])
+}
