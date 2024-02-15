@@ -30,11 +30,17 @@ function createBlog(article){
 function makeImg(art){
     const blogImg = document.createElement("img")
     const blogImgUrl = art.blogImg
-    blogImg.src = blogImgUrl;
+    if(blogImgUrl){
+        blogImg.src = blogImgUrl;
+    }else{
+        console.log("no image url")
+    }
+   
 
     return blogImg;
 }
 for(let i = 0; i < articles.length; i++){
-    makeImg(articles[i])
-    createBlog(articles[i])
+    const currentArticle = articles[i]
+    makeImg(currentArticle)
+    createBlog(currentArticle)
 }
