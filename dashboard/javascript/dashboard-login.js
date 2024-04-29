@@ -77,6 +77,7 @@ submitBtn.addEventListener("click", function (e) {
   if (!isValid || !isValid_pass) {
     e.preventDefault();
   }
+  
 
   if (isValid && isValid_pass) {
     window.open('dashboard.html', '_blank');
