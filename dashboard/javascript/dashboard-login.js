@@ -51,6 +51,17 @@ let isValid_pass;
 
 const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
 const passwordRegex = /^(?=.*[A-Z])(?=.*[@#$%^&+=!])(?=.*[0-9])(.{7,})$/;
+async function getData(){
+ const response =  await fetch('https://my-brand-samuel-backend.onrender.com/',{
+    headers:{"Content-Type": "application/json"},
+    method: "GET",
+  
+  })
+  const json = await response.json()
+  console.log(json)
+  console.log(response.status)
+}
+
 
 email.addEventListener("input", function (e) {
   isValid = emailRegex.test(e.target.value);
