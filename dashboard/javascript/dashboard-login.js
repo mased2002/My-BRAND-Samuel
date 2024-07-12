@@ -44,7 +44,7 @@ let submitBtn = document.querySelector(".submit_btn");
 
 let error_email = document.getElementById("error_email");
 let error_password = document.getElementById("error_password");
-getData()
+console.log(getData())
 // Declare isValid outside the event listeners
 let isValid;
 let isValid_pass;
