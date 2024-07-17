@@ -20,7 +20,7 @@ async function get_comments(){
         const comments = json.comments
         if(comments){
           comment.forEach((com, index)=> {
-            if(index < comments){
+            if(index < comments.length){
               com.textContent = comments[index].content
             }
           })
