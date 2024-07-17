@@ -17,11 +17,11 @@ async function get_comments(){
       console.log(json)
       console.log(response.status)
       if(response.status == 200){
-        const comments = json
+        const comments = json.comments
         if(comments){
           comment.forEach((com, index)=> {
             if(index < comments){
-              com.textContent = comment[index].content
+              com.textContent = comments[index].content
             }
           })
         }
