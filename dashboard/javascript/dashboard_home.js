@@ -12,7 +12,8 @@ async function get_comments(){
         method: "GET",
       
       })
-      const json = response.json()
+      const json =await response.json()
+      console.log(json.comments)
       console.log(json)
       console.log(response.status)
       if(response.status == 200){
