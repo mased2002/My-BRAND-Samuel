@@ -2,8 +2,8 @@
 const comment_container = document.querySelectorAll(".comment_cont")
 // const comment = document.getElementsByClassName("comment")
 const commentator = document.querySelectorAll(".name_of_comment")
-const blog = document.getElementsByClassName("blog_comment_on")
-const comment = document.querySelectorAll("comment_content")
+const blog = document.querySelectorAll(".blog_comment_on")
+const comment = document.querySelectorAll(".comment_content")
 get_comments();
 
 async function get_comments(){
