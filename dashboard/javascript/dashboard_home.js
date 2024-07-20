@@ -18,6 +18,7 @@ async function get_comments(){
       console.log(response.status)
       if(response.status == 200){
         const comments = json.comments
+        const approved = comments.filter(comment => comment.onBlog)
         if(comments){
           comment.forEach((com, index)=> {
             if(index < comments.length){
@@ -27,6 +28,11 @@ async function get_comments(){
           commentator.forEach((comm, index)=> {
             if(index < comments.length){
               comm.textContent = comments[index].name
+            }
+          })
+          blog.forEach((blo, index)=> {
+            if(index < approved.length){
+              blo.textContent = comments[index].onBlog
             }
           })
         }
