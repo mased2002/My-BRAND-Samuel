@@ -24,6 +24,11 @@ async function get_comments(){
               com.textContent = comments[index].content
             }
           })
+          commentator.forEach((comm, index)=> {
+            if(index < comments.length){
+              comm.textContent = comments[index].name
+            }
+          })
         }
       }
 
