@@ -48,7 +48,9 @@ async function get_data(){
     method: "GET",
   })
   const comments_data = await messages_response.json()
+  // console.log(comments_data)
   const data_comments = comments_data.comments
+  console.log(data_comments)
   text.textContent = data_comments.length
 }
 
