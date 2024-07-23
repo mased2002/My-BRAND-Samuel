@@ -5,6 +5,7 @@ const commentator = document.querySelectorAll(".name_of_comment")
 const blog = document.querySelectorAll(".blog_comment_on")
 const comment = document.querySelectorAll(".comment_content")
 get_comments();
+get_data();
 const text = document.getElementsByClassName(".number_messages")
 
 async function get_comments(){
@@ -50,6 +51,7 @@ async function get_data(){
   const data_comments = comments_data.comments
   text.textContent = data_comments.length
 }
+
 // const comments = get_comments()
 // if(comments){
 //   comment.forEach((com, index) => {
