@@ -6,6 +6,7 @@ const blog = document.querySelectorAll(".blog_comment_on")
 const comment = document.querySelectorAll(".comment_content")
 get_comments();
 get_comments_data();
+get_articles_data();
 const text = document.getElementById("number_messages")
 const number = document.querySelectorAll(".number")
 const number_array = [...number]
