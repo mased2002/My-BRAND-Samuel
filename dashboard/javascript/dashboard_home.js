@@ -5,8 +5,11 @@ const commentator = document.querySelectorAll(".name_of_comment")
 const blog = document.querySelectorAll(".blog_comment_on")
 const comment = document.querySelectorAll(".comment_content")
 get_comments();
-get_data();
+get_comments_data();
 const text = document.getElementById("number_messages")
+const number = document.querySelectorAll(".number")
+const number_array = [...number]
+console.log(number_array)
 
 async function get_comments(){
     const response = await fetch("https://my-brand-samuel-backend.onrender.com/api/comments/getAll",{
@@ -42,7 +45,7 @@ async function get_comments(){
 
 
 }
-async function get_data(){
+async function get_comments_data(){
   const messages_response = await fetch("https://my-brand-samuel-backend.onrender.com/api/comments/getAll", {
     headers:{"Content-Type": "aplication/json"},
     method: "GET",
@@ -52,6 +55,19 @@ async function get_data(){
   const data_comments = comments_data.comments
   console.log(data_comments)
   text.textContent = data_comments.length
+}
+async function get_articles_data(){
+  const articles_response = await fetch("https://my-brand-samuel-backend.onrender.com/api/articles/getAll",{
+    headers:{"Content-Type" : "aplication/json"},
+    method: "GET",
+  })
+  const articles_data = await articles_response.json()
+  const data_articles = articles_data.articles
+  console.log(data_articles)
+  if(number.length > 2){
+    number[2].textContent = data_articles.length
+  }
+
 }
 
 // const comments = get_comments()
