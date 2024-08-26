@@ -63,13 +63,18 @@ async function getData(){
   console.log(response.status)
 }
 async function login() {
-  const email = ""
-  const password =""
+  const email = email
+  const password = password
   const response = await fetch('https://my-brand-samuel-backend.onrender.com/api/users/login',{
     headers:{"Content-Type": "application/json"},
     method: "POST",
     body: JSON.stringify({email, password})
   })
+  if(response.status == 200){
+    return 1
+  }else {
+    return 0
+}
 }
 
 
