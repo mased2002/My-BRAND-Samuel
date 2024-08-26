@@ -62,6 +62,15 @@ async function getData(){
   console.log(json)
   console.log(response.status)
 }
+async function login() {
+  const email = ""
+  const password =""
+  const response = await fetch('https://my-brand-samuel-backend.onrender.com/api/users/login',{
+    headers:{"Content-Type": "application/json"},
+    method: "POST",
+    body: JSON.stringify({email, password})
+  })
+}
 
 
 
