@@ -38,8 +38,8 @@
 //             window.open('dashboard.html', "_blank")
 //         }
 //     })
-let email = document.getElementById("username");
-let password = document.getElementById("password");
+let email_input = document.getElementById("username");
+let password_input = document.getElementById("password");
 let submitBtn = document.querySelector(".submit_btn");
 
 let error_email = document.getElementById("error_email");
@@ -63,8 +63,8 @@ async function getData(){
   console.log(response.status)
 }
 async function login() {
-  const email = email
-  const password = password
+  const email = email_input
+  const password = password_input
   const response = await fetch('https://my-brand-samuel-backend.onrender.com/api/users/login',{
     headers:{"Content-Type": "application/json"},
     method: "POST",
@@ -80,7 +80,7 @@ async function login() {
 
 
 
-email.addEventListener("input", function (e) {
+email_input.addEventListener("input", function (e) {
   isValid = emailRegex.test(e.target.value);
   console.log(isValid)
   if (isValid) {
@@ -92,7 +92,7 @@ email.addEventListener("input", function (e) {
 });
 
 submitBtn.addEventListener("click", function (e) {
-  let passwordValue = password.value;
+  let passwordValue = password_input.value;
   isValid_pass = passwordRegex.test(passwordValue);
   if (isValid_pass) {
     error_password.style.display = "none";
