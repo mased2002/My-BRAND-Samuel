@@ -111,12 +111,12 @@ submitBtn.addEventListener("click", function (e) {
     }
   }
   // Prevent the form from submitting if validation fails
-  if (!isValid || !isValid_pass) {
-    e.preventDefault();
-  }
+  // if (!isValid || !isValid_pass) {
+  //   e.preventDefault();
+  // }
   
 
-  if (isValid && isValid_pass) {
-    window.open('dashboard.html', '_blank');
-  }
+  // if (isValid && isValid_pass) {
+  //   window.open('dashboard.html', '_blank');
+  // }
 });
