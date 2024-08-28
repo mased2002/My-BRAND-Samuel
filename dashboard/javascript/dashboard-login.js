@@ -70,7 +70,8 @@ async function login() {
     method: "POST",
     body: JSON.stringify({email, password})
   })
-  if(response.status == 200){
+  const json_response = await response.json()
+  if(json_response.status == 200){
     return 1
   }else {
     return 0
@@ -99,7 +100,16 @@ submitBtn.addEventListener("click", function (e) {
     error_password.textContent = "Password is wrong";
     error_password.style.display = "block";
   }
-
+  const login_funct = login();
+  if(login_funct == 1){
+    if (isValid && isValid_pass) {
+      window.open('dashboard.html', '_blank');
+    }
+  }else if(login_funct == 0){
+    if (!isValid || !isValid_pass) {
+      e.preventDefault();
+    }
+  }
   // Prevent the form from submitting if validation fails
   if (!isValid || !isValid_pass) {
     e.preventDefault();
